@@ -1,0 +1,18 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* for smooth anchor scrolling */
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+/* IMPORTANT: don't force #root to 100% height */
+#root {
+  min-height: 100vh; /* instead of height:100% */
+}

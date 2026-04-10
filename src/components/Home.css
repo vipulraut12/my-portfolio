@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400&display=swap');
+
+/* Global styles for predictability */
+* {
+  box-sizing: border-box;
+}
+
+.main-wrapper {
+  width: 100%;
+}
+
+/* Home Section - Main view container */
+.home-section {
+  background-color: #ffffff;
+  padding: 80px 5%; /* Adjusted padding */
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container {
+  max-width: 1200px; /* Slightly wider for the larger image */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* Removed top-level gap for more precise control over background colors */
+}
+
+/* Side-by-side layout (Name and Image row) */
+.hero-main-row {
+  display: flex;
+  justify-content: center; /* Center the elements toward the middle */
+  align-items: center;
+  gap: 6rem; /* Increased gap for central space */
+  margin-bottom: 60px; /* Push the description section down */
+}
+
+/* Left Side: Vertical Name */
+.name-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 4.5rem; /* Reduced by 20% for a cleaner look */
+  line-height: 1.1;
+  color: #1a1a1a;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* Right Side: Rectangle Image with subtle styling */
+.image-container {
+  display: flex;
+  justify-content: center; /* Ensure image is centered in its area */
+}
+
+.banner-rectangle {
+  width: 100%;
+  max-width: 600px; /* Increased by 20% */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  object-fit: cover;
+}
+
+/* Description Section with Light Grey Background and rounded corners */
+.intro-container {
+  background-color: #f7f7f7; /* Light grey background */
+  padding: 60px 40px; /* Add padding for the grey background effect */
+  border-radius: 8px; /* Subtle rounding for the grey container */
+  max-width: 900px; /* Ensure content stays centered and neat */
+  margin: 0 auto; /* Center the entire grey container */
+}
+
+.intro-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  color: #444;
+  line-height: 1.8;
+  font-weight: 300;
+  text-align: center;
+  margin: 0; /* Clear internal margins for text alignment */
+}
+
+/* Responsive design adjustments for smaller screens */
+@media (max-width: 992px) { /* Increased breakpoint for cleaner transition */
+  .hero-main-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+  
+  .name-title {
+    font-size: 3.5rem;
+  }
+  
+  .image-container {
+    justify-content: center;
+  }
+
+  .banner-rectangle {
+    max-width: 500px; /* Scale back for mid-range screens */
+  }
+
+  .intro-container {
+    padding: 40px 20px;
+  }
+}

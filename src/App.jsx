@@ -1,15 +1,11 @@
-import { useState } from 'react'
+import Home from './components/Home';
 
 function App() {
-
-
   return (
-    <>
-     
-      <h1>This is my portfolio website</h1>
-      
-    </>
-  )
+    <div className="App">
+      <Home />
+    </div>
+  );
 }
 
-export default App
+export default App;

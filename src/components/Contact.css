@@ -1,0 +1,122 @@
+.contact-section {
+    background-color: #f7f7f7; /* Alternating light grey background */
+    padding: 100px 5%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+    margin-top: 50px;
+  }
+  
+  /* Left Column Styling */
+  .contact-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+  }
+  
+  .contact-info p {
+    font-family: 'Inter', sans-serif;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+  
+  .contact-details p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  .resume-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  .resume-btn:hover {
+    background-color: #333;
+  }
+  
+  /* Right Column (Form) Styling */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .form-group label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+  }
+  
+  .form-group input, 
+  .form-group textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus, 
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #000;
+  }
+  
+  .submit-btn {
+    padding: 15px;
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 992px) {
+    .contact-wrapper {
+      grid-template-columns: 1fr;
+      gap: 50px;
+    }
+    
+    .contact-info {
+      text-align: center;
+    }
+  }
